@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d9d9d9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f9f4da;
+}
+
+header > p {
+    font-size: 0.875rem;
+    max-width: 450px;
+    color: #8e8e8e;
+}
+
+section.game_status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    min-height: 60px;
+    color: #f9f4da;
+}
+
+section.game_status.won {
+    background-color: #10a95b;
+}
+
+section.game_status.lost {
+    background-color: #ba2a2a;
+}
+
+section.game_status.farewell {
+    background-color: #7a5ea7;
+    border: 1px dashed #323232;
+}
+
+section.game_status > h2 {
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+section.game_status > p {
+    margin: 5px;
+}
+
+section.game_status > p.farewell-msg {
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.language-chips {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+span.chip {
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+}
+
+span.chip.lost::before {
+    content: '💀';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.word {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 2px;
+}
+
+section.word > span {
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-bottom: 1px solid #f9f4da;
+}
+
+section.word > span.missed-letter {
+    color: #ec5d49;
+}
+
+section.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+section.keyboard > button {
+    height: 35px;
+    width: 35px;
+    background-color: #fcba29;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section.keyboard > button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button.new-game {
+    background-color: #11B5E5;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    width: 225px;
+    height: 40px;
+    padding: 6px 12px;
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+section.keyboard > button.correct {
+    background-color: #10a95b;
+}
+
+section.keyboard > button.wrong {
+    background-color: #ec5d49;
+}
