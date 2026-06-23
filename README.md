@@ -1,16 +1,31 @@
-# React + Vite
+# 🚀 Assembly: Endgame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Guess the word within 8 attempts to keep the programming world safe from Assembly!**
 
-Currently, two official plugins are available:
+"Assembly: Endgame" is a fun, Hangman-style word-guessing game built with React. In this game, every incorrect letter guess eliminates a modern programming language. If you run out of attempts, the dreaded Assembly language takes over!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- **Classic Word Guessing:** Guess the hidden word letter by letter.
+- **Dynamic Lives System:** 8 attempts, represented by popular programming languages (HTML, CSS, JavaScript, React, TypeScript, Node.js, Python, Ruby). 
+- **Interactive UI:** On-screen keyboard with visual feedback for correct and incorrect guesses.
+- **Engaging Status Messages:** Humorous farewell messages when a language is eliminated.
+- **Victory Celebration:** Confetti animation when you successfully guess the word!
 
-## React Compiler
+## 🛠️ Tech Stack
+- **React** (Functional components, `useState`)
+- **Vite** (Build tool)
+- **clsx** (Conditional CSS class management)
+- **react-confetti** (Win state animation)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎮 How to Play
+1. The game selects a random word from a predefined list.
+2. Click the letters on the virtual keyboard to make a guess.
+3. **Correct guess:** The letter is revealed in the word.
+4. **Incorrect guess:** You lose a programming language, and a farewell message is displayed.
+5. **Win:** Guess all letters before running out of languages.
+6. **Lose:** Make 8 incorrect guesses, and Assembly takes over!
+7. Click **"New Game"** to play again.
 
-## Expanding the ESLint configuration
+## 🚀 Local Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository** (or extract the project files):
